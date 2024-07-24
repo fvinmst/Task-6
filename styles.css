@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ecf0fc;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 600px; 
+    margin: 0 auto;
+}
+
+.search-bar .material-symbols-outlined {
+    position: absolute;
+    left: 10px;
+    color: #999;
+    font-size: 24px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Tambahkan padding kiri agar teks tidak tumpang tindih dengan ikon */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.category-btn {
+    background-color: transparent; /* Set background color to transparent */
+    border: none; /* Add a border */
+    color: #2db84b; /* Set text color to green */
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.category-btn:hover, .category-btn:focus {
+    background-color: #2db84b; /* Set background color to green when hovered or focused */
+    color: #fff; /* Set text color to white when hovered or focused */
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.category-label {
+    display: inline-block;
+    background-color: #e0ffe6;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.post-info {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    color: #2db84b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+
+}
+
+.load-more {
+    background-color: #2db84b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more:hover {
+    background-color: #28a745;
+}
