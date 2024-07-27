@@ -6,8 +6,43 @@
 }
 
 body {
-    background-color: #ecf0fc;
+    background-color: #f7f9fc;
     color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #39984eeb;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 .header {
@@ -18,7 +53,7 @@ body {
 }
 
 .header-content h1 {
-    font-size: 35px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -33,7 +68,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 600px; 
+    width: 300px; 
     margin: 0 auto;
 }
 
@@ -46,7 +81,7 @@ body {
 
 .search-bar input {
     width: 100%;
-    padding: 10px 10px 10px 40px; /* Tambahkan padding kiri agar teks tidak tumpang tindih dengan ikon */
+    padding: 10px 10px 10px 40px; 
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -57,22 +92,26 @@ body {
     padding: 10px 0;
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
 }
 
 .category-btn {
-    background-color: transparent; /* Set background color to transparent */
-    border: none; /* Add a border */
-    color: #2db84b; /* Set text color to green */
+    display: inline-block;
+    background-color: transparent; 
+    border: 2px solid #e0ffe6; 
+    color: #2db84b;
     padding: 10px 20px;
-    margin: 0 5px;
+    margin: 5px; 
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, color 0.3s; 
+    text-decoration: none;
+    text-align: center;
 }
 
 .category-btn:hover, .category-btn:focus {
-    background-color: #2db84b; /* Set background color to green when hovered or focused */
-    color: #fff; /* Set text color to white when hovered or focused */
+    background-color: #2db84b; 
+    color: #fff; 
 }
 
 .main-content {
@@ -140,7 +179,6 @@ body {
     padding: 20px;
     background-color: #fff;
     border-top: 1px solid #e0e0e0;
-
 }
 
 .load-more {
@@ -154,4 +192,59 @@ body {
 
 .load-more:hover {
     background-color: #28a745;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .search-bar {
+        width: 80%; 
+    }
+
+    .card {
+        width: calc(100% - 20px); 
+    }
+
+    .card-content h2 {
+        font-size: 1rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .category-btn {
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-content p {
+        font-size: 0.8rem;
+    }
+
+    .search-bar {
+        width: 100%; 
+    }
+
+    .category-btn {
+        padding: 6px 12px; 
+        font-size: 0.8rem; 
+    }
 }
