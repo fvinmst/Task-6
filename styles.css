@@ -105,8 +105,8 @@ body {
 
 .category-btn {
     background-color: transparent;
-    border: 2px solid #e0ffe6;
-    color: #2db84b;
+    border: 2px solid #2d3748;
+    color: #2d3748;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
@@ -116,7 +116,7 @@ body {
 }
 
 .category-btn:hover, .category-btn:focus {
-    background-color: #2db84b;
+    background-color: #2d3748;
     color: #fff;
 }
 
@@ -150,7 +150,7 @@ body {
 
 .category-label {
     display: inline-block;
-    background-color: #e0ffe6;
+    background-color: #b6b9be;
     padding: 5px 10px;
     border-radius: 3px;
     margin-bottom: 10px;
@@ -176,7 +176,7 @@ body {
 }
 
 .card-content a {
-    color: #2db84b;
+    color: #2d3748;
     text-decoration: none;
     font-weight: bold;
 }
@@ -189,7 +189,7 @@ body {
 }
 
 .load-more {
-    background-color: #2db84b;
+    background-color:#2d3748;
     color: #fff;
     border: none;
     padding: 10px 20px;
